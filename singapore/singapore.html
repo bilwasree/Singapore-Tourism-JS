@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=in, initial-scale=1.0" />
+    <title>Singapore Tourism</title>
+    <link rel="stylesheet" href="singapore.css">
+  </head>
+  <body>
+    <div>
+      <h1 class="h1">Singapore Tourism</h1>
+      <table>
+        <tr>
+          <td>
+            <label for="name">Name</label>
+          </td>
+          <td>
+            <input type="text" class="input" id="name" placeholder="Enter a name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Phone No</label>
+          </td>
+          <td>
+            <input type="number" id="phone"  class="input"  name="phone" placeholder="Enter a number">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email ID </label>
+          </td>
+          <td>
+            <input type="text" id="email"  class="input"  name="email" placeholder="Enter a email">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="no_person">Number of Persons</label>
+          </td>
+          <td>
+          <input id="no_person" type="text" placeholder="Enter no of person" class="input" />
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="stay">Prefer Stay</label>
+          </td>
+          <td>
+            <input id="stay_yes" type="radio" name="stay" value="150" /><label for="stay_yes">Yes</label>
+            <input id="stay_no" type="radio" name="stay" value="0" /><label for="stay_no">No</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="stay">Number of Days Stay</label>
+          </td>
+          <td>
+            <input id="no_days" type="text" placeholder="Enter no days" class="input" name="stay" />
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="6">
+            <label for="">Place you would like to vist</label>
+          </td>
+          <tr>
+            <td>
+              <input type="checkbox" name="checkbox" id="pil" value="350" />
+              <label for=""> Place Of Pligrime </label><br>
+              <input type="checkbox" name="checkbox" value="430" id="her"/><label for="her">Place Of Heritage </label><br>
+              <input type="checkbox" name="checkbox" value="780" id="hil"/><label for="hil">Hills </label><br>
+              <input type="checkbox" name="checkbox" value="1200" id="fal" /><label for="fal">Falls </label><br>
+              <input type="checkbox" name="checkbox" value="270" id="bea"/><label for="bea">Beach </label><br>
+              <input type="checkbox" name="checkbox" value="4500" id="adv"/><label for="adv">Place Of Adventures </label>
+            </td>
+          </tr>
+        </tr>
+      </table>
+      <div class="btn">
+        <button class="btn_cost" onclick="tourisum()">Calulate Total Cost</button>
+      </div>
+      <h1 id="result" class="h1"></h1>
+    </div>
+    <script src="./singapore.js"></script>
+  </body>
+</html>
